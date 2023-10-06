@@ -24,7 +24,7 @@ const ResultCard = (props) => {
         setHasMoreData(false);
     }
     const navigateToFullPage = () => {
-        window.location.href = '/home/fullpage'; 
+        window.location.href = '/fullpage'; 
     }
 
 
@@ -36,7 +36,7 @@ const ResultCard = (props) => {
                     <Card className="h-100" style={{ width: '40rem' }}>
                         <Card.Body>
                             <div className='d-flex justify-content-between align-items-center mb-2'>
-                                <div>
+                                <div >
                                     <Card.Link href={item.url} className="mb-2 text-muted" style={{ textDecoration: 'none' }}>
                                         {item.url.slice(0, 28)}
                                     </Card.Link>
@@ -44,10 +44,10 @@ const ResultCard = (props) => {
 
 
                                 <div className='d-flex align-items-center'>
-                                    <div>
+                                    <div className='d-flex flex-row'>
                                         <Card.Link href="#" className="bookmark-link" style={{ color: "#052c65", textDecoration: 'none' }}>
                                             <BsBookmarksFill />
-                                            <span className="bookmark-text m-1" style={{ fontSize: "small" }}>Bookmark</span>
+                                           
                                         </Card.Link>
                                     </div>
                                     <div>
@@ -76,9 +76,6 @@ const ResultCard = (props) => {
                                                 </Card.Link>
                                             </div>
 
-
-
-
                                         </DropdownButton>
                                     </div>
                                 </div>
@@ -91,14 +88,11 @@ const ResultCard = (props) => {
                             </Card.Text>
                             <div className='d-flex justify-content-between align-items-center'>
                                 <div>
-                                   
                                         <Button variant="outline-primary"
                                             className='px-3 button-primary-outline '
                                             onClick={()=>navigateToFullPage()}
                                         >Read Full Content
                                         </Button>
-                                   
-
                                 </div>
 
                                 <div style={{ fontSize: "small" }}>{item.datePublished.slice(0, 10)}</div>

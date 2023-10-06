@@ -20,7 +20,7 @@
 }
 
 .bookmark-link:hover .bookmark-text {
-    display: inline;
+    display: inline !important;
 }
 .myln{
     text-decoration: none!important;
@@ -28,7 +28,7 @@
 }
 
 .bookmark-text {
-    display: none;
+    display: none !important;
 }
 
 .dropdown-toggle::after {

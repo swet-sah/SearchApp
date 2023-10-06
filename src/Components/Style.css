@@ -1,0 +1,40 @@
+.button-primary-outline {
+    border-color: #052c65 !important;
+    color: #052c65 !important;
+}
+
+.button-primary-outline:hover, .myln:hover {
+   
+    background-color: #052c65 !important;
+    color: #fff !important;
+}
+.search-box .form-control:focus,
+.search-box .form-control:hover {
+    border-color: rgba(0,0,0,.125);
+    box-shadow: none;
+}
+
+.myborder:hover,.myborder:focus{
+    border-color: #052c65 !important;
+    box-shadow: 0px 1px 1px #052c65; 
+}
+
+.bookmark-link:hover .bookmark-text {
+    display: inline;
+}
+.myln{
+    text-decoration: none!important;
+    color:  #052c65 !important;
+}
+
+.bookmark-text {
+    display: none;
+}
+
+.dropdown-toggle::after {
+    
+    display: none !important;
+}
+.custom-dropdown {
+    margin-left: -10px; /* Adjust the margin to align with the bookmark icon */
+}

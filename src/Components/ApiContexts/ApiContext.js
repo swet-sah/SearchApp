@@ -8,11 +8,11 @@ const ApiProvider = ({ children }) => {
     const [SearchVal, setSearchVal] = useState('');
     const [currentPage, setCurrentPage] = useState(1);
     const [showResult, setShowResult] = useState(false);
-    const [click,setClick] = useState(false);
+    const [click, setClick] = useState(false);
     const [hasMoreData, setHasMoreData] = useState(true);
     const handleSearchButton = () => {
-        (SearchVal === "") ?setClick(true):setClick(false);
-        (SearchVal === "") ?setShowResult(false):setShowResult(true);
+        (SearchVal === "") ? setClick(true) : setClick(false);
+        (SearchVal === "") ? setShowResult(false) : setShowResult(true);
 
     }
     const [getFullPage, setFullPage] = useState(false);
@@ -33,7 +33,7 @@ const ApiProvider = ({ children }) => {
                     },
                     headers: {
                         'X-BingApis-SDK': 'true',
-                        'X-RapidAPI-Key': '33582e27ccmsh4be0c4315303629p1bc8e4jsn823e53a39a92',
+                        'X-RapidAPI-Key': '995eca1e5emsh9411f52a3787e94p1a4ef9jsn0283f39234e5',
                         'X-RapidAPI-Host': 'bing-web-search1.p.rapidapi.com'
                     }
                 };
@@ -46,12 +46,12 @@ const ApiProvider = ({ children }) => {
             }
         }
 
-        fetchData(); 
+        fetchData();
 
     }, [SearchVal]);
 
     return (
-        <ApiContext.Provider value={{ apiData, setApiData, SearchVal, setSearchVal, currentPage, setCurrentPage,showResult,handleSearchButton,setShowResult,click ,hasMoreData,setHasMoreData,getFullPage,setFullPage}}>
+        <ApiContext.Provider value={{ apiData, setApiData, SearchVal, setSearchVal, currentPage, setCurrentPage, showResult, handleSearchButton, setShowResult, click, hasMoreData, setHasMoreData, getFullPage, setFullPage }}>
             {children}
         </ApiContext.Provider>
     );
